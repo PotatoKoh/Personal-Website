@@ -17,13 +17,13 @@ export const HomePage = () => {
 
     const handleNext = () => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === Images.length - 1 ? 0 : prevIndex + 1
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
     };
 
     const handlePrev = () => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? Images.length - 1 : prevIndex - 1
+        prevIndex === 0 ? images.length - 1 : prevIndex - 1
       );
     };
 
@@ -54,7 +54,7 @@ export const HomePage = () => {
 
         {/* Dots for selecting image */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-          {Images.map((_, index) => (
+          {images.map((_, index) => (
             <button
               key={index}
               onClick={() => handleDotClick(index)}
