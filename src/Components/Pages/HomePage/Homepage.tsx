@@ -71,11 +71,14 @@ export const HomePage = () => {
   return (
     <div className="min-w-screen min-h-screen">
       <NavBar />
-      <div className="w-full px-5 lg:px-40 pt-10 pb-10 " data-aos="fade-down">
+      <div
+        className="w-full px-5 lg:px-40 pt-10 pb-10 group relative"
+        data-aos="fade-down"
+      >
         {/* Introduction */}
         <p className="titles">About Me</p>
         <div className="flex flex-row items-center justify-center pb-20">
-          <div className="flex flex-col card-styling mr-5  lg:w-[40%] text-start gap-y-5 font-light">
+          <div className="flex flex-col card-styling mr-5  lg:w-[40%] text-start gap-y-5 ">
             <span>Hi!</span>
             <span>
               I'm Gabriel, A Computer Engineering Diploma Graduate from 2022 in
@@ -99,10 +102,10 @@ export const HomePage = () => {
 
         {/* Work Done */}
         <p className="titles">Past work experiences</p>
-        <div className="flex flex-col gap-y-5 items-center justify-center text-start font-light ">
+        <div className="flex flex-col gap-y-5 items-center justify-center text-start  group">
           {/* First Work Experience */}
-          <div className="flex flex-row lg:max-w-[40%] font-light">
-            <div className="flex-1 card-styling mr-5 ">
+          <div className="flex flex-row lg:max-w-[40%] ">
+            <div className="flex-1 card-styling mr-5 group">
               <p className="mb-5">
                 My first Internship was actually as a Software Engineer at
                 Inspiraz Technology where I helped make tools for their next
@@ -120,7 +123,7 @@ export const HomePage = () => {
 
           {/* Second Work Experience */}
           <div className=" lg:max-w-[40%]">
-            <div className="card-styling ">
+            <div className="card-styling  group">
               <p className="mb-5">
                 After my internship, for my Final Year Project, I worked on a
                 vegetable management system.
