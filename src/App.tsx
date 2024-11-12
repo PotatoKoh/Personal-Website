@@ -1,13 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HomePage } from "./Components/Pages/HomePage/Homepage";
-import "./App.css";
+import CursorEffect from "./Components/CursorEffect";
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
+      <div className="relative">
+        <CursorEffect />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
